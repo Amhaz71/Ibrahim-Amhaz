@@ -8,11 +8,10 @@ def input_students():
     return students
 
 
-def print_students(students):
+def display_students(students):
     print("\nAll students and scores:")
     for name, score in students:
         print(f"{name} - {score}")
-
 
 
 def sum_scores_recursive(scores):
@@ -36,7 +35,7 @@ def top_student(students):
     for student in students:
         if student[1] > top[1]:
             top = student
-    return top
+    return
 
 
 def failed_students(students):
@@ -45,7 +44,7 @@ def failed_students(students):
 
 def main():
     students = input_students()
-    print_students(students)
+    display_students(students)
 
     avg = average_score(students)
     top = top_student(students)
