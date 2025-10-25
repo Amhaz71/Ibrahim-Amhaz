@@ -18,9 +18,9 @@ for attempt in range(attempts):
 number = int(input("Enter a number. All prime numbers between 2 and that number will be displayed : "))
 
 for i in range(2, number):
-    n = True
+    f = True
     for j in range(2, i // 2 + 1):
         if i % j == 0:
-            n = False
-    if n == True:
+            f = False
+    if f == True:
         print(f"Prime number = {i}")
